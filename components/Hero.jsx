@@ -16,16 +16,16 @@ const Hero = () => {
             <span className="text-main">Hi</span>, My Name Is Leinda Demy
           </h1>
           <p className="text-2xl" data-aos="fade-right">
-            I'm frontend developer from Egypt in Cairo, with one year experience
+            I'm frontend developer from Egypt in Mansoura, with one year experience
           </p>
           <div className="link flex mt-5 gap-5">
             <BtnPrimary
               text="Github"
-              href="https://github.com/marwanzayed-coder"
+              href="https://github.com/leindademy"
             />
             <BtnPrimary
               text="Facebook"
-              href="https://www.facebook.com/profile.php?id=100069884260987"
+              href="https://www.facebook.com/lenda.lala.92"
             />
           </div>
         </div>

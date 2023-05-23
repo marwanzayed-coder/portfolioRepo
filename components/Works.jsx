@@ -16,8 +16,8 @@ const Works = () => {
             justify="start" // start - end
             name="Ecommerce Api"
             desc="Api for the ecommerce website with the same elements as the Noon website"
-            github="https://github.com/marwanzayed-coder/ecommerce-api"
-            demo="https://documenter.getpostman.com/view/25881677/2s93RMWw6o"
+            github="https://github.com/leindademy"
+            demo="https://leindademy.github.io/my-project-one/"
           />
         </div>
       </div>
