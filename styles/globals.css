@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply bg-background dark:bg-background-dark dark:text-white;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.Typewriter__cursor {
+  @apply hidden;
+}
+.emoji-404 {
+  position: relative;
+  animation: mymove 2.5s infinite;
+}
+
+@keyframes mymove {
+  33% {
+    top: 0px;
+  }
+  66% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.dot {
+  animation: topBottom 1s infinite linear alternate;
+}
+@keyframes topBottom {
+  from {
+    transform: translate(-50%, 0);
+  }
+  to {
+    transform: translate(-50%, 20px);
+  }
+}
+.title {
+  @apply text-2xl h-12 bg-background-white dark:bg-background-black w-fit p-2 px-5 pr-12 rounded-tl-lg rounded-bl-lg relative after:absolute after:h-full after:bg-background dark:after:bg-background-dark after:w-12 after:top-0 after:-right-5 after:rotate-45;
+}
+.title-ar {
+  @apply text-2xl h-12 bg-background-white dark:bg-background-black w-fit p-2 px-5 pl-12 rounded-tr-lg rounded-br-lg relative after:absolute after:h-full after:bg-background dark:after:bg-background-dark after:w-12 after:top-0 after:-left-5 after:rotate-45;
+}
+
+.title-before {
+  @apply absolute top-0 border-t-[24px] border-solid border-t-transparent border-b-[24px] border-b-transparent border-r-[24px] border-r-background-white dark:border-r-background-black right-0;
+}
+.title-before-ar {
+  @apply absolute top-0 border-t-[24px] border-solid border-t-transparent border-b-[24px] border-b-transparent border-l-[24px] border-l-background-white dark:border-l-background-black left-0;
+}
+
+.hero-clip {
+  clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
+  @apply bg-background-white dark:bg-background-black;
+}
